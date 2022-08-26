@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, unused_field, unused_import, unnecessary_null_comparison
 
+import 'package:firebase/View/Mainpage.dart';
+import 'package:firebase/View/login_or_signup.dart';
+import 'package:firebase/View/signup.dart';
 import 'package:firebase/after_login.dart';
-import 'package:firebase/login_or_signup.dart';
-import 'package:firebase/signup.dart';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -24,7 +26,7 @@ class LogIn extends StatefulWidget {
 class _LogInState extends State<LogIn> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-
+  final TextEditingController _username = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -114,7 +116,7 @@ class _LogInState extends State<LogIn> {
                           prefs.setBool("isLoggedIn", true);
                           Navigator.of(context).pushReplacement(
                             MaterialPageRoute(
-                              builder: (context) => afterlogin(),
+                              builder: (context) => MainPage(),
                             ),
                           );
                         }

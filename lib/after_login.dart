@@ -1,13 +1,13 @@
 // ignore_for_file: unused_import, unused_field
 
 import 'package:firebase/google_signin.dart';
-import 'package:firebase/login_or_signup.dart';
-import 'package:firebase/signup.dart';
+import 'package:firebase/View/login_or_signup.dart';
+import 'package:firebase/View/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase/authentication_service.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'firebase_options.dart';
+import 'View/firebase_options.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:firebase/after_login.dart';

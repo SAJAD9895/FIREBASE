@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, unused_import
-import 'package:firebase/login.dart';
+
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase/login_or_signup.dart';
+import 'package:firebase/View/login_or_signup.dart';
 import 'package:firebase/authentication_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
