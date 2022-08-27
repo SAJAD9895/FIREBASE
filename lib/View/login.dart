@@ -34,7 +34,7 @@ class _LogInState extends State<LogIn> {
           elevation: 0,
           leading: IconButton(
             icon: const Icon(
-              Icons.account_balance_sharp,
+              Icons.arrow_back_ios_new,
               color: Colors.black,
             ),
             onPressed: () {
@@ -43,10 +43,6 @@ class _LogInState extends State<LogIn> {
             },
           ),
           backgroundColor: const Color.fromARGB(255, 254, 250, 250),
-          title: const Text(
-            'SALES TOP',
-            style: TextStyle(color: Colors.black),
-          ),
         ),
         body: SingleChildScrollView(
           child: Column(crossAxisAlignment: CrossAxisAlignment.start,
@@ -97,6 +93,9 @@ class _LogInState extends State<LogIn> {
                   children: [
                     MaterialButton(
                       onPressed: () async {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => MainPage(),
+                        ));
                         final message = await AuthService().login(
                           email: _emailController.text,
                           password: _passwordController.text,

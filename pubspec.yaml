@@ -44,6 +44,8 @@ dependencies:
   http: ^0.13.5
   flutter_greetings: ^1.0.1
   provider: ^6.0.3
+  eosdart: ^0.4.8
+  youtube_player_flutter: ^8.1.0
 
 dev_dependencies:
   flutter_test:

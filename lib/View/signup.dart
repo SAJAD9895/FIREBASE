@@ -27,21 +27,12 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          elevation: 0,
+          backgroundColor: Colors.white,
           leading: IconButton(
-            icon: const Icon(
-              Icons.account_balance_sharp,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Home()));
-            },
-          ),
-          backgroundColor: const Color.fromARGB(255, 254, 250, 250),
-          title: const Text(
-            'SALES TOP',
-            style: TextStyle(color: Colors.black),
+            
+            onPressed: () => Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => const Home())),
+            icon: Icon(Icons.arrow_back_ios_new),
           ),
         ),
         body: SingleChildScrollView(
@@ -52,7 +43,7 @@ class _SignUpState extends State<SignUp> {
               Padding(
                 padding: EdgeInsets.fromLTRB(35, 25, 0, 15),
                 child: Text(
-                  'Welcome Back!',
+                  'Welcome ',
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),
                 ),
               ),

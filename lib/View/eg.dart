@@ -10,7 +10,7 @@
 // import 'package:api/user.dart';
 // // import 'package:api/modelclass.dart';
 // // ignore: unused_import
-// import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';c
 
 // class home extends StatefulWidget {
 //   const home({Key? key}) : super(key: key);
@@ -112,5 +112,3 @@
 //   }
 // }
 
-// // class DataProvider {
-// }
